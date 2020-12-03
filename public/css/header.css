@@ -1,0 +1,107 @@
+#header {
+  background: #144184;
+  color: white;
+  padding: 20px 0;
+}
+
+#header .inside {
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+
+
+#header .inside .logo-container {
+
+  
+
+}
+
+#header .inside .logo-container a {
+  font-size: 1.4rem;
+
+  
+
+}
+#header .inside .header-nav {
+
+  
+
+}
+#header .inside .header-nav  li {
+
+  justify-content: start;
+  display: inline;
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+#header .inside .header-nav  {
+
+  
+}
+
+#header .inside .login-register {
+  justify-self: end;
+  
+}
+
+
+.genres {
+  box-shadow: 0 0 3px rgba(0,0,0,.1);
+  visibility: hidden;
+  background: #fff;
+  position: relative;
+  color: #1b1b1b;
+  width: 350px;
+  left: 336px;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  z-index: 10;
+
+
+}
+
+.genres.active {
+  visibility: visible;
+  opacity: 1;
+  /* transform: translate3d(0, 0px, 0 ); */
+}
+
+.genres .inside-genres {
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 15px 0;
+  display: grid;
+
+
+}
+
+.genres .inside-genres  .genre-containers li {
+  transition: all .3s ease-in-out ;
+  text-transform: capitalize;
+  font-weight: 300;
+  
+  padding: 10px 0;
+ 
+ 
+
+
+}
+
+.genres .inside-genres  .genre-containers li:hover {
+  color: steelblue;
+
+
+}
+
+
+
+
+
+
+
+

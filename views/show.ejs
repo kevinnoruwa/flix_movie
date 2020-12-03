@@ -1,0 +1,166 @@
+<%- include('partials/header.ejs') -%>
+<% movie.forEach((movie) => { %>
+
+<section id="movie-background" style="background-image: url(<%=movie.background_image%>);">
+    <div class="background-color">
+        <a href="/movie">
+            <div class="play-circle">
+                <i class="fa fa-play-circle" aria-hidden="true"></i>
+            </div>
+        </a>
+        <div class="inside">
+            <div class="breadcrumb">
+                <a href="/">Home</a>
+                <a>/</a>
+                <a href="/movie/<%=movie.id%>"><%=movie.title%></a> 
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="description-box">
+    <div class="inside-box">
+        <div class="movie-img">
+            <img src="<%=movie.image%>" alt="">
+        </div>
+        <div class="movie-details">
+            <a href="#">
+                <div class="play-btn">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+            </a>
+            <div class="title">
+                <span><%=movie.title%></span>
+            </div>
+            <hr class="hr">
+            <div class="ratings">
+                <span class="hd">HD</span>
+                <span class="imdb"> IMDB: <%=movie.imdb%></span>
+            </div>
+            <div class="description">
+                <span><%=movie.description%></span>
+            </div>
+            <div class="extras">
+                <div class="column-1">
+                    <div class="inside-column">
+                        <span class="bold">Release:</span>
+                        <span><%=movie.release_date%></span>
+                       
+                    </div>
+                    <div >
+                        <span class="bold"> Genre: </span>
+                        <span><%=movie.genre%></span>
+                          
+                    </div>
+                </div>
+                <div class="column-2">
+                    <div class="inside-column">
+                        <span class="bold">  Duration:</span>
+                        <span><%=movie.duration%> min</span>    
+                    </div>
+                    <div>
+                        <span class="bold"> Casts: </span>
+                        <span><%=movie.cast%></span> 
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<% }) %>
+
+<section id="extra-movies">
+    <div class="title">
+        <span>Coming Soon</span>
+    </div>
+    <hr class="hr-line">
+    <div class="movies-area">
+        <div class="inside-movie-area">
+            <div class="movie-box">
+                <div class="movie">
+                    <img src="https://img.myflixer.to/xxrz/250x400/201/63/42/6342824f71b6d8a2d800cfd270c32052/6342824f71b6d8a2d800cfd270c32052.jpg" alt="">
+
+                </div>
+                <span class="movie-title"></span>
+            </div>
+            <div class="movie-box">
+                <div class="movie">
+                    <img src="https://img.myflixer.to/xxrz/250x400/201/4a/8f/4a8f61acdf1e159807592273c111826d/4a8f61acdf1e159807592273c111826d.jpg" alt="">
+
+                </div>
+                <span class="movie-title"></span>
+            </div>
+            <div class="movie-box">
+                <div class="movie">
+                    <img src="https://img.myflixer.to/xxrz/250x400/201/a5/b6/a5b613c18165a8c6639912ca4057111c/a5b613c18165a8c6639912ca4057111c.jpg" alt="">
+
+                </div>
+                <span class="movie-title"></span>
+            </div>
+            <div class="movie-box">
+                <div class="movie">
+                    <img src="https://img.myflixer.to/xxrz/250x400/201/b7/b4/b7b4c8eb4cc9d6405d0d523ad705a5a7/b7b4c8eb4cc9d6405d0d523ad705a5a7.jpg" alt="">
+
+                </div>
+                <span class="movie-title"></span>
+            </div>
+            <div class="movie-box">
+                <div class="movie">
+                    <img src="https://img.myflixer.to/xxrz/250x400/201/67/2f/672f832cf6ac5e1ef0a715aec88d967c/672f832cf6ac5e1ef0a715aec88d967c.jpg" alt="">
+
+                </div>
+                <span class="movie-title"></span>
+            </div>
+           
+        </div>
+    </div>
+    <hr class="hr">
+</section>
+
+
+<%- include('partials/footer.ejs') -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

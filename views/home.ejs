@@ -1,0 +1,94 @@
+
+
+
+    <%- include('partials/header.ejs') -%>
+
+
+
+    
+
+
+
+<section id="intro-section">
+    <!-- <div class="inside">
+        <div class="description">
+            <h1>
+                welcome to flixers <br>
+                Find and stream your favorite movies now
+            </h1>
+        </div>
+    </div> -->
+
+        <div class="slide-show">
+            <div class=" slides slide-1"></div> 
+            <div class=" slides slide-2"></div>   
+            <div class="slides slide-3"></div>   
+            <div class="slides slide-4"></div>   
+            <div class="slides slide-5"></div>        
+        </div>
+   
+       
+</section>
+<%- include('partials/flash.ejs') -%>
+<section id="content-section">
+    <div class="header-title">
+        <h3>Streaming Now</h3>
+    </div>
+    <hr class="hr-line">
+    <div class="content">
+       
+        <div class="container group">
+            <% movies.forEach((movie) => { %>
+                <div class="movie-box">
+                    <a href="/movie/<%=movie.id%>">
+                        <div class="movie">
+                            <img src="<%=movie.image%>" alt="">
+                            <div class="movie-background">
+                                <div class="circle-icon">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </div>
+                                
+                            </div> 
+                        </div>
+                    </a>
+                <div class="movie-description">
+                    <div class="details">
+                        <span><%=movie.title%></span>
+                    
+                    </div>
+                </div>
+            </div>   
+
+            <% })%>  
+        
+        </div>
+    </div>
+</section>
+
+
+<section id="pagination-section">
+    <div class="pagination-container">
+        <div class="pagination-box ">
+            <a href="/page=1">
+            <div class="pagination-circle ">
+                <span>1</span>
+            </div>
+        </a>
+            <a href="/page=2">
+                <div class="pagination-circle">
+                    <span>2</span>
+                </div>
+            </a>
+            <a href="/page=3">
+            <div class="pagination-circle">
+                <span>3</span>
+            </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+<%- include('partials/footer.ejs') -%>

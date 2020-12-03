@@ -1,0 +1,282 @@
+#movie-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: -157px;
+    left: 0;
+    right: 0;
+
+}
+
+#movie-background .background-color {
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0, 0.60);
+  
+
+}
+
+
+
+#movie-background .background-color .play-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3E8AFA;
+    border-radius: 50%;
+    color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left:705.5px ;
+    
+    
+    
+  
+
+}
+
+
+#movie-background .background-color .play-circle .fa {
+    font-size: 3.2rem;
+    position: relative;
+    
+
+
+}
+
+
+#movie-background .background-color .inside {
+  
+    padding: 20px 0 0 15px;
+
+
+}
+
+/* DESCRIPTION BOX SECTION */
+
+
+#description-box {
+    background: white;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    max-width: 1200px ;
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    position: relative;
+    bottom: 306px;
+    
+    
+
+}
+
+
+
+
+#description-box .inside-box {
+    grid-template-columns: 1fr 2.5fr;
+    padding: 25px 20px;
+    display: grid;
+
+}
+
+
+#description-box .inside-box .movie-img {
+    width: 250px;
+height: 375px;
+max-width: 250px;
+max-height: 375px;
+
+
+   
+
+}
+
+
+#description-box .inside-box .movie-img img {
+height: 100%;
+ width: 100%;
+ border-radius: 10px;
+
+}
+#description-box .movie-details {
+    position: relative;
+    top: 20px;
+   
+    
+    
+}
+
+#description-box .movie-details .play-btn {
+    background: #3E8AFA;
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+
+#description-box .movie-details .title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 18px 0 2px;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+   
+    
+    
+}
+
+
+#description-box .movie-details .title:hover {
+
+    color: #3E8AFA;
+   
+    
+    
+}
+
+#description-box .movie-details .hr {
+    opacity: 0.2;
+
+   
+    
+    
+}
+#description-box .movie-details .ratings { 
+    padding: 15px 0 10px;
+    
+}
+
+
+#description-box .movie-details .ratings .hd{ 
+    color: red;
+    font-weight: 900;
+  
+    
+}
+
+#description-box .movie-details .ratings .imdb{ 
+    color:#e6c948 ;
+    font-weight: 900;
+  
+    
+}
+
+
+#description-box .movie-details .description { 
+   padding: 5px 0 20px;
+   font-weight: 300;
+  
+    
+}
+
+#description-box .movie-details .extras { 
+    grid-template-columns: 300px 300px;
+   display: grid;
+   justify-items: start;
+   align-items: center;
+   
+     
+ }
+
+ #description-box .movie-details .extras { 
+    font-weight: 300;
+  
+
+
+    
+}
+ #description-box .movie-details .extras .inside-column { 
+     padding: 0 0 10px;
+   
+ 
+ 
+     
+ }
+
+ #description-box .movie-details .extras  .bold{ 
+    font-weight: 400;
+  
+
+
+    
+}
+
+/* MOVIE exteas */
+#extra-movies {
+    position: relative;
+    bottom: 250px;
+   
+}
+
+#extra-movies .title {
+    
+    font-size: 2rem;
+    font-weight: 300;
+    display: inline-block;
+    margin: 0 0 5px;
+    position: relative;
+    left: 20px;
+    
+}
+
+#extra-movies .hr-line {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 0 20px;
+    width: 500px;
+
+}
+
+#extra-movies .movies-area {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#extra-movies .movies-area .inside-movie-area {
+    grid-template-columns: repeat(5, 20%);
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-gap: -100px;
+
+   
+}
+
+#extra-movies .movies-area .inside-movie-area .movie-box{
+    width: 200px;
+    max-width: 220px;
+   
+}
+
+#extra-movies .movies-area .inside-movie-area .movie-box img{
+    width: 100%;
+   
+}
+
+
+#extra-movies .hr{
+    opacity: 0.1;
+    position: relative;
+    bottom: -115px;
+   
+}
