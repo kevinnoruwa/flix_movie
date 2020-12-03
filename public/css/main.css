@@ -430,6 +430,17 @@ li {
     font-size: .8rem;
     font-weight: 300;
 }
+
+/* FOOTER */
+  footer {
+    font-size: 0.8rem;
+  }
+  #footer .inside-footer .footer-details span {
+    font-size: 0.8rem;
+    position: relative;
+    right: 8px;
+
+  }
   
 
  }
