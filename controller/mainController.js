@@ -6,7 +6,7 @@ module.exports.index = (req, res) => {
     DB.query(`SELECT * FROM flixers ORDER BY id ASC LIMIT 8 OFFSET 0` , (err, movies) => {
         
         if(err) {
-            console.log(err)
+           return console.log(err)
         } else {
             
             return res.render('home.ejs', {movies})
@@ -21,7 +21,7 @@ module.exports.index2=  (req, res) => {
     DB.query(`SELECT * FROM flixers ORDER BY id ASC LIMIT 8 OFFSET 8` , (err, movies) => {
         
         if(err) {
-            console.log(err)
+            return console.log(err)
         } else {
             return res.render('home.ejs', {movies})
     
@@ -34,7 +34,7 @@ module.exports.index3 = (req, res) => {
     DB.query(`SELECT * FROM flixers ORDER BY id ASC LIMIT 8  OFFSET 16` , (err, movies) => {
         
         if(err) {
-            console.log(err)
+            return console.log(err)
         } else {
             return res.render('home.ejs', {movies})
     
@@ -49,11 +49,11 @@ module.exports.show  = (req, res) => {
     let id = req.params.id  
         DB.query(`SELECT * FROM flixers WHERE id = "${id}" LIMIT 1`, (err, movie) => {
             if(err || movie.length === 0 ) {
-                console.log(err)
-                res.render("error.ejs", {err})
+             
+                return res.render("error.ejs", {err})
                
             }  else {
-                res.render("show.ejs", {movie})
+                return res.render("show.ejs", {movie})
             }
         }) 
 }
@@ -69,10 +69,10 @@ module.exports.store =  catchAsync( async (req, res, next) => {
             ${Prevention.escape(user.email)},
             ${Prevention.escape(password)})`, catchAsync( async (err, account) => {
                 if(err) {
-                  res.render('error.ejs', {err})
+                 return res.render('error.ejs', {err})
                 } else {
                     req.flash("success", 'Welcome to flixers!')
-                    res.redirect("/")
+                    return res.redirect("/")
                 }
             }))
 })
@@ -88,7 +88,7 @@ module.exports.login =   (req, res) => {
                 if(validPassword === true) {
                     req.session.user = account[0].id
                     req.flash("success", 'Welcome back to flixers!')
-                    res.redirect("/")
+                   return res.redirect("/")
                 } else {
                     req.flash('error', 'incorrect password or email')
                     return res.redirect('/login')
