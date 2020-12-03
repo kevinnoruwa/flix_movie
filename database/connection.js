@@ -6,19 +6,19 @@ require('dotenv').config()
 
 
 
-const DB = mysql.createConnection({
-    host: process.env.HOST ,
-    user: process.env.USER ,
-    password: process.env.PW,
-    database: process.env.DATABASE
-  })
-
-//   const DB = mysql.createConnection({
-//     host: process.env.HOST || '127.0.0.1',
-//     user: process.env.USER || 'root',
-//     password: process.env.PASSWORD || 'root',
-//     database: process.env.DATABASE || 'movie'
+// const DB = mysql.createConnection({
+//     host: process.env.HOST ,
+//     user: process.env.USER ,
+//     password: process.env.PW,
+//     database: process.env.DATABASE
 //   })
+
+  const DB = mysql.createConnection({
+    host: process.env.HOST || '127.0.0.1',
+    user: process.env.USER || 'root',
+    password: process.env.PW || 'root',
+    database: process.env.DATABASE || 'movie'
+  })
 
 
 
