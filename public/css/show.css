@@ -261,6 +261,10 @@ height: 100%;
 
    
 }
+#extra-movies .movies-area .inside-movie-area .movie {
+  display: inline-block;
+   
+}
 
 #extra-movies .movies-area .inside-movie-area .movie-box{
     width: 200px;

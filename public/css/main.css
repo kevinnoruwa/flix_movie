@@ -14,7 +14,7 @@
   margin: 0;
 }
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smoo;
 }
 body {
   
@@ -256,6 +256,15 @@ li {
 
   }
 
+  @media only screen and (min-width: 768px) and (max-width: 1022px){
+    #extra-movies .movies-area .inside-movie-area {
+      width: 780px;
+    
+
+    }
+
+   
+  }
 
   /* 767px  */
 

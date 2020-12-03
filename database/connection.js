@@ -2,15 +2,17 @@
 
 
 const  mysql = require('mysql')
+require('dotenv').config()
 
 
 
 const DB = mysql.createConnection({
-  host: '127.0.0.1',
-  user: 'root',
-  password: 'root',
-  database: 'movie'
-})
+    host: process.env.HOST || '127.0.0.1',
+    user: process.env.USER || 'root',
+    password: process.env.PASSWORD || 'root',
+    database: process.env.DATABASE || 'movie'
+  })
+  
 
 
 
