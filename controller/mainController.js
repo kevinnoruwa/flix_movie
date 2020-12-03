@@ -1,6 +1,13 @@
-
+const {validateUser} = require("../middleware/validate.js")
+const controller = require('../controller/mainController')
+const ExpressError = require("../utils/expressError.js")
 const catchAsync = require("../utils/catchAsync")
-const DB = require('../database/connection')
+const DB = require('../database/connection.js')
+const session = require("express-session")
+const Prevention = require('sqlstring')
+const express = require('express')
+const bcrypt = require('bcrypt')
+
 
 module.exports.index = (req, res) => {
     DB.query(`SELECT * FROM flixers ORDER BY id ASC LIMIT 8 OFFSET 0` , (err, movies) => {
